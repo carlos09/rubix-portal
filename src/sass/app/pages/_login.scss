@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+html.default body #body{
+  &.login {
+    background-color: $darkgrey;
+    font-family: 'Open Sans', sans-serif;
+
+    h2 {
+      color: $lightgrey-text;
+      font-size: 24px;
+      font-weight: 300;
+    }
+
+    img#station-logo {
+      width: 25%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    form#login {
+      margin-top: 50px;
+
+      input[type='text'],
+      input[type='password'] {
+        width: 100%;
+        padding: 10px 5px;
+        font-size: 16px;
+        background-color: transparent;
+        border-left: 0;
+        border-right: 0;
+        border-top: #979797 1px solid;
+        border-bottom: #979797 1px solid;
+        transition: all .25s linear;
+        -webkit-transition: all .25s linear;
+        -moz-transition: all .25s linear;
+        -o-transition: all .25s linear;
+        margin-top: -1px;
+
+        &:focus {
+          background-color: #424242;
+          outline-width: 0;
+          outline: none;
+        }
+      }
+
+      a.forgot-link {
+        color: $lightgrey-text;
+        font-size: 12px;
+        margin: 15px auto 20px;
+        display: block;
+        -webkit-transition: all .25s linear;
+        -moz-transition: all .25s linear;
+        -o-transition: all .25s linear;
+        border: none;
+        padding-bottom: 0;
+
+        &:hover {
+          color: $orange;
+          border: none;
+        }
+      }
+
+      div.btn.st-btn {
+        background-color: #e0e0e0;
+        color: #2f2f2f;
+        text-transform: none;
+        border: none;
+        line-height: 2;
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        font-weight: 500;
+        font-size: 14px;
+        border-radius: 5px;
+        padding: 10px 0;
+        height: 100%;
+      }
+    }
+  }
+}
