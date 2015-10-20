@@ -81,3 +81,9 @@ body {
   &.md-36 { font-size: 36px; }
   &.md-48 { font-size: 48px; }
 }
+
+.vert-align-middle {
+  vertical-align: middle;
+  display: inline-block;
+  float: none;
+}

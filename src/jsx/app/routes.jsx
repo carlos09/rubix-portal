@@ -6,6 +6,7 @@ import Blank from 'routes/blank';
 import Blank2 from 'routes/blank2';
 //import Blank3 from 'routes/blank3';
 import Login from 'routes/login';
+import Dash from 'routes/dash';
 
 export default (withHistory, onUpdate) => {
   const history = withHistory?
@@ -18,6 +19,7 @@ export default (withHistory, onUpdate) => {
       <Route path='/' component={Blank} />
       <Route path='/blank2' component={Blank2} />
       <Route path='/login' component={Login} />
+      <Route path='/dash' component={Dash} />
     </Router>
   );
 };
