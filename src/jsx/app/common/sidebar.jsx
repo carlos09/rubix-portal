@@ -18,6 +18,7 @@ class ApplicationSidebar extends React.Component {
                 <SidebarNav style={{marginBottom: 0}}>
                   <SidebarNavItem glyph='icon-fontello-gauge' name='Blank' href='/' />
                   <SidebarNavItem glyph='icon-fontello-gauge' name='Blank2' href='/blank2' />
+                  <SidebarNavItem glyph='icon-fontello-gauge' name='Login' href='/login' />
                   <SidebarNavItem glyph='icon-feather-mail' name={<span>Menu <BLabel className='bg-darkgreen45 fg-white'>3</BLabel></span>}>
                     <SidebarNav>
                       <SidebarNavItem glyph='icon-feather-inbox' name='Inbox' />
