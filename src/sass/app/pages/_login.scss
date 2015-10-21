@@ -2,7 +2,7 @@
 
 html.station body #body{
   &.login {
-    background-color: $darkgrey;
+    background-color: $darkgrey !important;
     font-family: 'Open Sans', sans-serif;
 
     h2 {

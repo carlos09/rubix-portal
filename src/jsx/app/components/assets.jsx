@@ -1,5 +1,7 @@
 var React = require('react');
 
+import CPicker from './colorpicker';
+import LogoDropzone from './dropzone-logo';
 
 var Assets = React.createClass({
   getInitialState: function() {
@@ -66,6 +68,27 @@ var Assets = React.createClass({
 
                 <p className='upload-info'>Please upload a image that is at minimum 1000 x 1000 pixels. We ask that you please submit a png with no background. We will use the color as your accent color throughout the app.</p>
                 <p className='upload-sub-info'>Please Note: Everytime this logo or color is updated, we will need to resubmit your app to their respective app stores.</p>
+
+                <LogoDropzone />
+                <CPicker />
+              </Col>
+            </Row>
+
+            <Row className='background-upload'>
+              <Col sm={8} smOffset={2} className='text-center'>
+                <h3 className='heading'>Background Image</h3>
+
+                <p className='upload-info'>Please upload a image that is at minimum 1300 x 2300 pixels. This will be used as the main image for your app, across all platforms.</p>
+                <p className='upload-sub-info'>Please Note: Everytime this image is updated, we will need to resubmit your app to their respective app stores.</p>
+              </Col>
+            </Row>
+
+            <Row className='app-icon-upload'>
+              <Col sm={8} smOffset={2} className='text-center'>
+                <h3 className='heading'>App Icon</h3>
+
+                <p className='upload-info'>Please upload a image that is at minimum 1024 x 1024 pixels. This will be used as the App Icon for your app, across all platforms.</p>
+                <p className='upload-sub-info'>Please Note: Everytime this icon is updated, we will need to resubmit your app to their respective app stores.</p>
               </Col>
             </Row>
           </Grid>
