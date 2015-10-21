@@ -71,3 +71,19 @@ body {
   margin-top: 150px;
   position: relative;
 }
+
+/* CUSTOM STATION STYLES */
+.material-icons {
+  vertical-align: middle;
+  &.md-18 { font-size: 18px; }
+  &.md-24 { font-size: 24px; }
+  &.md-28 { font-size: 28px; }
+  &.md-36 { font-size: 36px; }
+  &.md-48 { font-size: 48px; }
+}
+
+.vert-align-middle {
+  vertical-align: middle;
+  display: inline-block;
+  float: none;
+}

@@ -391,8 +391,9 @@ export var SidebarNavItem = React.createClass({
     if(this.props.children) {
       toggleButton = <Icon className={toggleClasses.trim()} bundle='fontello' glyph={this.state.dir+'-open-3'} />;
     }
-    if(this.props.glyph || this.props.bundle) {
-      icon = <Icon bundle={this.props.bundle} glyph={this.props.glyph} />;
+    if(this.props.muiIcon || this.props.muiClassName) {
+      //icon = <Icon bundle={this.props.bundle} glyph={this.props.glyph} />;
+      icon = <i className={this.props.muiClassName}>{this.props.muiIcon}</i>;
     }
     var style = {height: this.props.autoHeight ? 'auto' : ''};
 

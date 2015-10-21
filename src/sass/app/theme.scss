@@ -239,3 +239,28 @@
     )
   )
 ));
+
+@include theme-maker("station", (
+  theme (
+    bg #e64a19
+  ),
+  logout (
+    bg #EF6C00,
+    hover-bg lighten(#EF6C00, 5%)
+  ),
+  sidebar (
+    bg #000,
+    avatar (
+      bg #232323
+    ),
+    controls (
+      bg #BCBCBC,
+      btn (
+        color lighten(#333, 10%),
+        border #333,
+        active-bg #EF6C00,
+        active-color darken(#eee, 10%)
+      )
+    )
+  )
+));
