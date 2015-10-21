@@ -16,8 +16,10 @@ class ApplicationSidebar extends React.Component {
               <div className='sidebar-header'>PAGES</div>
               <div className='sidebar-nav-container'>
                 <SidebarNav style={{marginBottom: 0}}>
-                  <SidebarNavItem glyph='icon-fontello-gauge' name='Blank' href='/' />
-                  <SidebarNavItem glyph='icon-fontello-gauge' name='Blank2' href='/blank2' />
+                  <SidebarNavItem muiClassName='material-icons' muiIcon='settings' name='Blank' href='/' />
+                  <SidebarNavItem muiClassName='material-icons' muiIcon='settings' name='Blank2' href='/blank2' />
+                  <SidebarNavItem muiClassName='material-icons' muiIcon='person' name='Login' href='/login' />
+                  <SidebarNavItem muiClassName='material-icons' muiIcon='dashboard' name='Dash' href='/dash' />
                   <SidebarNavItem glyph='icon-feather-mail' name={<span>Menu <BLabel className='bg-darkgreen45 fg-white'>3</BLabel></span>}>
                     <SidebarNav>
                       <SidebarNavItem glyph='icon-feather-inbox' name='Inbox' />
@@ -58,20 +60,16 @@ export default class extends React.Component {
         <div id='avatar'>
           <Grid>
             <Row className='fg-white'>
-              <Col xs={4} collapseRight>
-                <img src='/imgs/avatars/avatar0.png' width='40' height='40' />
+              <Col xs={3} collapseRight>
+                <img id='station-logo' src='/imgs/logos/station/station-logo.png' className="img-responsive" />
               </Col>
-              <Col xs={8} collapseLeft id='avatar-col'>
-                <div style={{top: 23, fontSize: 16, lineHeight: 1, position: 'relative'}}>Anna Sanchez</div>
-                <div>
-                  <Progress id='demo-progress' value={30} min={0} max={100} color='#ffffff'/>
-                  <Link to='/app/lock'><Icon id='demo-icon' bundle='fontello' glyph='lock-5' /></Link>
-                </div>
+              <Col xs={9} collapseLeft id='avatar-col' >
+                <div style={{top: 23, fontSize: 16, lineHeight: 1, position: 'relative', display: 'none'}}>Anna Sanchez</div>
               </Col>
             </Row>
           </Grid>
         </div>
-        <SidebarControls>
+        <SidebarControls className='hidden'>
           <SidebarControlBtn bundle='fontello' glyph='docs' sidebar={0} />
           <SidebarControlBtn bundle='fontello' glyph='chat-1' sidebar={1} />
           <SidebarControlBtn bundle='fontello' glyph='chart-pie-2' sidebar={2} />
