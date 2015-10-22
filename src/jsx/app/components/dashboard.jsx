@@ -36,6 +36,9 @@ var Dashboard = React.createClass({
       }
     });
   },
+  handleClick: function () {
+    console.log('you clicked on ');
+  },
   render: function () {
     var stationsList = this.state.stations;
 
@@ -53,9 +56,7 @@ var Dashboard = React.createClass({
           <Grid>
           {
             stationsList.map( function( station, i ){
-
-              console.log('now: ', station.Identifier);
-              return <Row key={i} className='container-fluid station-view'>
+              return <Row className='container-fluid station-view' key={i} onClick={this.handleClick.bind(this, i)}>
                   <Col sm={1} className='vert-align-middle'>
                     <img src={station.Image} className='img-responsive'/>
                   </Col>

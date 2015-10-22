@@ -52,26 +52,30 @@ var Assets = React.createClass({
         <Container>
           <Grid>
             <Row className='asset-download'>
-              <Col sm={6} smOffset={1} className='vert-align-middle'>
-                <h3 className='heading'>Station PSD Template</h3>
-                <p className='sub-heading'>This should help you find a background image that works for you </p>
-              </Col>
-              <Col sm={4} smOffset={1} className='vert-align-middle'>
-                <input type='button' className='btn st-btn st-orange' value='Download' />
-                <p className='small-text text-center'>Made for Photoshop CC 2015</p>
-              </Col>
+              <div className='container'>
+                <Col sm={8} className='vert-align-middle'>
+                  <h3 className='heading'>Station PSD Template</h3>
+                  <p className='sub-heading'>This should help you find a background image that works for you </p>
+                </Col>
+                <Col sm={4} className='vert-align-middle'>
+                  <input type='button' className='btn st-btn st-orange' value='Download' />
+                  <p className='small-text text-center'>Made for Photoshop CC 2015</p>
+                </Col>
+              </div>
             </Row>
 
             <Row className='logo-color'>
-              <Col sm={8} smOffset={2} className='text-center'>
-                <h3 className='heading'>Logo and Color</h3>
+              <div className='container'>
+                <Col sm={10} smOffset={1} className='text-center'>
+                  <h3 className='heading'>Logo and Color</h3>
 
-                <p className='upload-info'>Please upload a image that is at minimum 1000 x 1000 pixels. We ask that you please submit a png with no background. We will use the color as your accent color throughout the app.</p>
-                <p className='upload-sub-info'>Please Note: Everytime this logo or color is updated, we will need to resubmit your app to their respective app stores.</p>
+                  <p className='upload-info'>Please upload a image that is at minimum 1000 x 1000 pixels. We ask that you please submit a png with no background. We will use the color as your accent color throughout the app.</p>
+                  <p className='upload-sub-info'>Please Note: Everytime this logo or color is updated, we will need to resubmit your app to their respective app stores.</p>
 
-                <LogoDropzone />
-                <CPicker />
-              </Col>
+                  <LogoDropzone />
+                  <CPicker />
+                </Col>
+              </div>
             </Row>
 
             <Row className='background-upload'>
