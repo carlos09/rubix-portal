@@ -17,7 +17,7 @@ html.station body #body{
       margin: 0 auto;
     }
 
-    form#login {
+    div#login {
       margin-top: 50px;
 
       input[type='text'],
@@ -74,6 +74,11 @@ html.station body #body{
         border-radius: 5px;
         padding: 10px 0;
         height: 100%;
+      }
+
+      .error {
+        color: #E33D46;
+        margin: 10px 0;
       }
     }
   }

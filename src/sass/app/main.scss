@@ -73,6 +73,12 @@ body {
 }
 
 /* CUSTOM STATION STYLES */
+html.station body {
+  .pace-small .pace .pace-progress {
+    background-color: $orange;
+  }
+}
+
 .material-icons {
   vertical-align: middle;
   &.md-18 { font-size: 18px; }

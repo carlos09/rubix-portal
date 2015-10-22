@@ -165,6 +165,10 @@ html.station body #body{
   .dropzone {
     background-color: rgba(0,0,0, .02);
     border-color: rgba(0,0,0, .02);
+    transition: all .25s linear;
+    -webkit-transition: all .25s linear;
+    -moz-transition: all .25s linear;
+    -o-transition: all .25s linear;
 
     .dz-default.dz-message {
       background-image: none;
@@ -173,6 +177,16 @@ html.station body #body{
          font-size: 22px;
          color: #ccc;
          font-weight: 300;
+      }
+    }
+
+    &:hover {
+      background-color: rgba(0,0,0, .035);
+
+      .dz-default.dz-message {
+        span {
+          color: lighten($orange, 20%);
+        }
       }
     }
   }
